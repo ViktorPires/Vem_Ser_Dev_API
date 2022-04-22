@@ -7,9 +7,7 @@ import { Item } from './entities/item.entity';
 
 @Injectable()
 export class ItemService {
-  constructor(
-    @InjectRepository(Item) private readonly repository: Repository<Item>,
-  ) {}
+  constructor(@InjectRepository(Item) private readonly repository: Repository<Item>) {}
 
   create(createItemDto: CreateItemDto): Promise<Item> {
     const item = this.repository.create(createItemDto);
@@ -23,14 +21,19 @@ export class ItemService {
     });
   }
 
-  async findOne(id: string): Promise<Item> {
-    const item = await this.repository.findOne(id);
-
-    if (!item) {
-      throw new NotFoundException(`Item ${id} not found`);
-    }
-    return;
+  findOne(id: string): Promise<Item> {
+    return this.repository.findOne(id);
   }
+
+  //async findOne(id: string): Promise<Item> {
+  //  const item = await this.repository.findOne(id);
+
+  // if (!item) {
+  //   throw new NotFoundException(`Item ${id} not found`);
+  // }
+  // return;
+  // }
+
   async update(id: string, updateItemDto: UpdateItemDto): Promise<Item> {
     const item = await this.repository.preload({
       id: id,

@@ -20,7 +20,7 @@ import { ItemModule } from './item/item.module';
       ssl: {
         rejectUnauthorized: false,
       },
-      logger: 'advanced-console',
+      logger: `advanced-console`,
       logging: true,
     }),
     ItemModule,
