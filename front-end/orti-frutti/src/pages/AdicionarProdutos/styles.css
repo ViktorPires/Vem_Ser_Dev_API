@@ -1,0 +1,8 @@
+.produto_container{
+    padding: 16px;
+}
+
+.produto_container h1{
+    font-size: 16px;
+    font-weight: 600;
+}
