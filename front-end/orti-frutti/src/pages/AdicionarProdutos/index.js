@@ -16,12 +16,12 @@ export default function AdicionarProduto(){
         api.post('/item', produto)
             .then((response) => {
                 if(response.status === 201){
-                    message.success('Produto adicionado com sucesso!');
+                    message.success("Produto adicionado com sucesso!", 5);
                     history.push('/produtos')
                 }
             })
             .catch((err) => {
-                message.error('Aconteceu um erro ao adicionar o produto   ' + err.response.data.message);
+                message.error("Aconteceu um erro ao adicionar o produto  " + err.response.data.message, 5);
             })
     }
     return(

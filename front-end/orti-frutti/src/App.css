@@ -14,6 +14,14 @@
   font-weight: 700;
 }
 
+.home{
+  font-size: 25px;
+}
+
+.home:hover {
+      transform: scale(1.5);
+    }
+
 .menu {
   background-color: #f7f7f7;
   padding: 16px;
@@ -27,5 +35,9 @@
 
 .menu_section {
   background-color: #f7f7f7;
+}
 
+.content {
+  overflow: auto;
+  padding: 18px;
 }

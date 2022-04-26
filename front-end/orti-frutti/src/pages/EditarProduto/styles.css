@@ -1,0 +1,19 @@
+.produto_edit{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 8px;
+}
+
+.produto_campo{
+    display: grid;
+    grid-template-columns: 30% 1fr;
+}
+.produto_label{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.editar--botao{
+    width: 100%;
+}
