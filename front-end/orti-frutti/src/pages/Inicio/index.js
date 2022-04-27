@@ -14,11 +14,11 @@ export default function Inicio(){
     }
 
     return(
-        <div className='inicio_container'>
+        <div className="inicio_container">
             <section>
-                <img src={Logo} alt='logo' className='center'/>
+                <img src={Logo} alt='logo' className='logo'/>
                 <br />
-                <Button className='center' onClick={listarProdutos}>Ver Produtos</Button>
+                <Button className='botao' onClick={listarProdutos}>Ver Produtos</Button>
             </section>
         </div>
     )

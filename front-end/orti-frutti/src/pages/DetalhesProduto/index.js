@@ -57,7 +57,7 @@ export default function DetalhesProduto(){
             <h1>Detalhes do produto</h1>
             <br/>
             <div className="produto_container">
-                <Card key={produto.id} tittle={produto.name} bordered={false}>
+                <Card className="produto_card_detalhe" key={produto.id} tittle={produto.name} bordered={false}>
                     <p>Nome: {produto.name}</p>
                     <p>Id: {produto.id}</p>
                     <p>UpdatedAt: {produto.updatedAt}</p>
@@ -65,8 +65,8 @@ export default function DetalhesProduto(){
                     <p>Quantidade: {produto.quantity}</p>
                     <hr/>
                     <div className="produto_card--actions">
-                        <Button type="primary" success icon={<EditOutlined/>} onClick={() => history.push(`/editar/${produto.id}`, produto)}>Editar</Button>
-                        <Button type="primary" danger onClick={() => showConfirm(produto)}>Excluir</Button>
+                        <Button className="produto_card_button" type="primary" success icon={<EditOutlined/>} onClick={() => history.push(`/editar/${produto.id}`, produto)}>Editar</Button>
+                        <Button className="produto_card_button" type="primary" danger onClick={() => showConfirm(produto)}>Excluir</Button>
                     </div>
                 </Card>
             </div>

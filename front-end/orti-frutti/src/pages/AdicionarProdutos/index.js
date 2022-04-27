@@ -25,11 +25,12 @@ export default function AdicionarProduto(){
             })
     }
     return(
-        <div className='produto_container'>
-                <h1>Adicionar novo produto</h1>
+        <div className="produto_container">
+                <h1>Adicionar Novo Produto</h1>
                 <br/>
             <div>
                 <Form 
+                className="produto_submit"
                 name='submitProduto'
                 labelCol={{span:8}}
                 wrapperCol={{span:16}}
@@ -37,11 +38,11 @@ export default function AdicionarProduto(){
                 autoComplete="off"
                 > 
                 <Form.Item
-                    label='Nome do Item'
+                    label='Nome'
                     name="name"
-                    rules={[{required: true, message: "O nome do item não pode ser vazio" }]}
+                    rules={[{required: true, message: "Insira o nome do item" }]}
                 >
-                    <Input />
+                    <Input className='produto_input'/>
                 </Form.Item>
 
                 <Form.Item
@@ -49,18 +50,18 @@ export default function AdicionarProduto(){
                     name="description"
                     rules={[{required: true, message: "Insira a descrição do item" }]}
                 >
-                    <Input />
+                    <Input className='produto_input'/>
                 </Form.Item>
 
                 <Form.Item
                     label='Quantidade'
                     name="quantity"
                 >
-                    <InputNumber />
+                    <InputNumber/>
                 </Form.Item>
             
-                <Form.Item>
-                    <Button type='primary' htmlType='submit' disabled={disabled}>
+                <Form.Item className='submit'>
+                    <Button className='adicionar--botao'type='primary' htmlType='submit' disabled={disabled}>
                         Adicionar
                     </Button> 
                 </Form.Item>

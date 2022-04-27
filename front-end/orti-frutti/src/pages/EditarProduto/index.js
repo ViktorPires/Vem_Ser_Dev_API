@@ -34,29 +34,29 @@ export default function EditarProduto(){
 
     return(
 
-            <div className='produto_container'>
+            <div className="produto_container">
                 <h1>Editar Produto</h1>
                 <br/>
-                <div className='produto_edit'>
-                    <div className='produto_campo'>
+                <div className="produto_edit">
+                    <div className="produto_campo">
                         <span className='produto_label'>Nome:</span>
-                        <Input value={produtoEdit?.name} onChange={(event) => {
+                        <Input className='produto_input'value={produtoEdit?.name} onChange={(event) => {
                             setProdutoEdit((produtoEdit) => {
                                 return {...produtoEdit, name: event.target.value}
                             })
                         }}/>
                     </div>
 
-                    <div className='produto_campo'>
+                    <div className="produto_campo">
                         <span className='produto_label'>Descrição:</span>
-                        <Input value={produtoEdit?.description} onChange={(event) => {
+                        <Input className='produto_input'value={produtoEdit?.description} onChange={(event) => {
                             setProdutoEdit((produtoEdit) => {
                                 return {...produtoEdit, description: event.target.value}
                             })
                         }}/>
                     </div>
 
-                    <div className='produto_campo'>
+                    <div className="produto_campo">
                         <span className='produto_label'>Quantidade:</span>
                         <InputNumber value={produtoEdit?.quantity} onChange={(event) => {
                             setProdutoEdit((produtoEdit) => {
@@ -65,7 +65,7 @@ export default function EditarProduto(){
                         }}/>
                     </div>
 
-                    <Button type='primary' className='editar--botao' onClick={() => handleSubmitEdit(produtoEdit)}>Editar</Button>
+                    <Button type='primary' className="editar--botao" onClick={() => handleSubmitEdit(produtoEdit)}>Editar</Button>
 
                 </div>
             </div>

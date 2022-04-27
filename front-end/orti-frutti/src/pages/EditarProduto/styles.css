@@ -5,15 +5,30 @@
     gap: 8px;
 }
 
+.produto_container h1 {
+    font-size: 18px;
+    font-family: caveat, cursive;
+}
+
 .produto_campo{
-    display: grid;
-    grid-template-columns: 30% 1fr;
+    display: grid;    
+    grid-template-columns: 20% 0.6fr;
 }
 .produto_label{
     font-size: 14px;
     font-weight: 600;
 }
 
+.produto_input:focus {
+    background-color: yellow;
+}
+
 .editar--botao{
-    width: 100%;
+    width: 80%;
+    border-radius: 14px;
+    transition: transform 0.3s;
+}
+
+.editar--botao:hover{
+    transform: scale(1.1);
 }

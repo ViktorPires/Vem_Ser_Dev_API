@@ -1,10 +1,22 @@
-.inicio_container{
-    background-color: #f7f7f7;
+.inicio_container {
+    background-color: #20bf55;
+    background-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%); 
 }
 
-.center{
+.logo, .botao {
     display: block;
     margin-left: auto;
     margin-right: 30%;
     width: 53%;
+}
+
+.botao {
+    border-radius: 14px;
+    transition: color 0.9s, background 0.6s, transform 0.3s;
+}
+
+.botao:hover {
+    color: white;
+    background: #1ECD97;
+    transform: scale(1.1);
 }

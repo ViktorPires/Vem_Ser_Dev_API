@@ -9,35 +9,60 @@
 }
 
 .header {
-  background-color: #f7f7f7;
-  font-size: 16px;
+  background-color: #20bf55;
+  background-image: linear-gradient(315deg, #20bf55 0%, #01baef 40%);   
+  font-size: 30px;
   font-weight: 700;
+  text-align: center;
+  font-family: 'Tapestry', cursive;
 }
 
-.home{
-  font-size: 25px;
+.home {
+  transition: transform 1s;
+  font-size: 13px;
 }
 
 .home:hover {
-      transform: scale(1.5);
-    }
+  transform: scale(1.2);
+}
+
+.addProduto {
+  transition: transform 1s;
+  font-size: 13px;
+}
+
+.addProduto:hover {
+  transform: scale(1.2);
+}
+
+.listProduto {
+  transition: transform 1s;
+  font-size: 13px;;
+}
+
+.listProduto:hover {
+  transform: scale(1.2);
+}
 
 .menu {
-  background-color: #f7f7f7;
+  background-color: #e4eee9;
   padding: 16px;
 }
 
 .footer {
-  background-color: #f7f7f7;
+  background-color: #20bf55;
+  background-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%);  
   text-align: center;
   font-weight: 600;
 }
 
 .menu_section {
-  background-color: #f7f7f7;
+  background-color: #e4eee9;
 }
 
 .content {
   overflow: auto;
   padding: 18px;
+  background-color: #20bf55;
+  background-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%);  
 }

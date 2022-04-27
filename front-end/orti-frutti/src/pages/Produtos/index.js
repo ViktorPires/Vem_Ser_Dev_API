@@ -25,16 +25,16 @@ export default function Produtos(){
 
     return(
         <div className="produto_container"> 
-            <h1>Relação de todos os Produtos
+            <h1>Relação de Todos os Produtos
             <img src={Carrinho} alt='logo' className='carrinho'/>
             </h1>
             <div className="produto_card_container">
                 {produtos.map(produto => (
-                    <Card key={produto.id} tittle={produto.name} bordered={false} style={{width: 300}}>
-                        <p>{produto.name}</p>
-                        <p>Descrição: {produto.description}</p>
-                        <p>Quantidade: {produto.quantity}</p>
-                        <Button onClick={() => history.push(`/detalhes/${produto.id}`)}>Detalhes</Button>
+                    <Card className="produto_card" key={produto.id} tittle={produto.name} bordered={false} style={{width: 300}}>
+                        <p className="produto_name">{produto.name}</p>
+                        <p className="produto_description">Descrição: {produto.description}</p>
+                        <p className="produto_quantity">Quantidade: {produto.quantity}</p>
+                        <Button className="produto_detalhes_botao" onClick={() => history.push(`/detalhes/${produto.id}`)}>Detalhes</Button>
                     </Card>  
                 ))} 
             </div>
