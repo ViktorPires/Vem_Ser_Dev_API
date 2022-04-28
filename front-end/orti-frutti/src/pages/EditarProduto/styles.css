@@ -6,8 +6,10 @@
 }
 
 .produto_container h1 {
-    font-size: 18px;
-    font-family: caveat, cursive;
+    text-align: start;
+    font-size: 30px;
+    font-Weight: 700; 
+    font-family: 'caveat', cursive;
 }
 
 .produto_campo{

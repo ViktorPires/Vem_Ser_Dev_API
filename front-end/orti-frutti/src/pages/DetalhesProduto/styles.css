@@ -4,6 +4,13 @@
     padding: 16px;
 }
 
+.produto_container h1 {
+    text-align: start;
+    font-size: 25px;
+    font-Weight: 700; 
+    font-family: 'caveat', cursive;
+}
+
 .produto_card_container {
     display: flex;
     flex-direction: row;
