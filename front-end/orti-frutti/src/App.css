@@ -20,6 +20,7 @@
 .home {
   transition: transform 1s;
   font-size: 13px;
+  border-radius: 16px;
 }
 
 .home:hover {
@@ -29,6 +30,7 @@
 .addProduto {
   transition: transform 1s;
   font-size: 13px;
+  border-radius: 16px;
 }
 
 .addProduto:hover {
@@ -37,7 +39,8 @@
 
 .listProduto {
   transition: transform 1s;
-  font-size: 13px;;
+  font-size: 13px;
+  border-radius: 16px;
 }
 
 .listProduto:hover {
@@ -45,7 +48,7 @@
 }
 
 .menu {
-  background-color: #e4eee9;
+  background-color: #01baef;
   padding: 16px;
 }
 
@@ -57,7 +60,8 @@
 }
 
 .menu_section {
-  background-color: #e4eee9;
+  background-color: #F6FCF6;
+  border-radius: 16px;
 }
 
 .content {

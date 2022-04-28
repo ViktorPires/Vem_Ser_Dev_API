@@ -33,9 +33,9 @@ function App() {
           <Content className="content">
             <Routes />
           </Content>
-          </Layout>      
+        </Layout>      
           <Footer className="footer">Todos os Direitos Reservados</Footer>
-        </Layout>
+      </Layout>
     </div>
   );
 }
