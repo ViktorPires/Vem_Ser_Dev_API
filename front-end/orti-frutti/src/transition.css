@@ -8,7 +8,7 @@
 .transition-appear-active, .transition-enter.transition-enter-active {
     opacity: 1;
     transform: translateY(0);
-    transition: opacity 300ms linear 150ms, transform 300ms ease-out 150ms;
+    transition: opacity 600ms linear 300ms, transform 450ms ease-out 150ms;
     overflow: auto;
 }
 
@@ -20,6 +20,6 @@
 .transition-exit.transition-exit-active {
     opacity: 1;
     transform: translateY(400px);
-    transition: opacity 150ms linear, transform 150ms ease-in;
+    transition: opacity 600ms linear, transform 300ms ease-in;
     overflow: auto;
 }
