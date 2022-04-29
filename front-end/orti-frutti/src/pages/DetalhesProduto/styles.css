@@ -29,6 +29,12 @@
     justify-content: space-between;
 }
 
-.produto_card_button{
+.produto_card_button {
     border-radius: 14px;
+    transition: color 0.4s, transform 0.3s;
+}
+
+.produto_card_button:hover {
+    transform: scale(1.1);
+    color: aqua;
 }

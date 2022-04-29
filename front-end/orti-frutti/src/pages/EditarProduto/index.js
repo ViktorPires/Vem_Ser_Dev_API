@@ -5,11 +5,13 @@ import api from '../../services/api'
 
 import { useHistory, useLocation } from 'react-router-dom'
 import { message, Input, Button, InputNumber } from 'antd'
+import { EditOutlined, RollbackOutlined } from '@ant-design/icons';
 
 export default function EditarProduto(){
 
     const history = useHistory()
     const location = useLocation()
+    const [disabled, setDisabled] = useState(false)
 
     const[produtoEdit, setProdutoEdit] = useState({})
 
@@ -20,6 +22,7 @@ export default function EditarProduto(){
 
 
     async function handleSubmitEdit(produto){
+        setDisabled(true)
         api.patch(`/item/${produto.id}`, produto)
         .then((response) => {
             if(response.status === 200){
@@ -65,8 +68,8 @@ export default function EditarProduto(){
                         }}/>
                     </div>
 
-                    <Button type='primary' className="editar--botao" onClick={() => handleSubmitEdit(produtoEdit)}>Editar</Button>
-
+                    <Button type='primary' className="editar--botao" icon={<EditOutlined/>} disabled={disabled} onClick={() => handleSubmitEdit(produtoEdit)}>Editar</Button>
+                    <Button type="default" className="editar--botao" icon={<RollbackOutlined/>} onClick={() => history.push(`/detalhes/${produtoEdit.id}`)}>Voltar</Button>
                 </div>
             </div>
     )

@@ -1,5 +1,6 @@
 import './App.css';
 import Routes from './routes'
+import './transition.css'
 
 import { Menu } from 'antd';
 import { PlusCircleOutlined, UnorderedListOutlined, HomeOutlined} from '@ant-design/icons';

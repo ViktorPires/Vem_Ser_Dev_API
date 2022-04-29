@@ -17,7 +17,7 @@ export default function Inicio(){
         <div className="inicio_container">
             <section>
                 <img src={Logo} alt='logo' className='logo'/>
-                <br />
+                <br/>
                 <Button className='botao' onClick={listarProdutos}>Ver Produtos</Button>
             </section>
         </div>

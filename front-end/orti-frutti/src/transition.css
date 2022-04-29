@@ -1,0 +1,25 @@
+.transition-enter {
+    opacity: 0;
+    z-index: 1;
+    transform: translateY(400px);
+    overflow: auto;
+}
+
+.transition-appear-active, .transition-enter.transition-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 300ms linear 150ms, transform 300ms ease-out 150ms;
+    overflow: auto;
+}
+
+.transition-exit {
+    opacity: 0;
+    transform: translateY(0);
+    overflow: auto;
+}
+.transition-exit.transition-exit-active {
+    opacity: 1;
+    transform: translateY(400px);
+    transition: opacity 150ms linear, transform 150ms ease-in;
+    overflow: auto;
+}

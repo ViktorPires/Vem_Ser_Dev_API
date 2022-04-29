@@ -28,9 +28,10 @@
 .editar--botao{
     width: 80%;
     border-radius: 14px;
-    transition: transform 0.3s;
+    transition: color 0.4s, transform 0.3s;
 }
 
 .editar--botao:hover{
     transform: scale(1.1);
+    color: aqua;
 }

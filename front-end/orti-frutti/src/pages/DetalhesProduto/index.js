@@ -5,7 +5,7 @@ import { useParams, useHistory } from "react-router-dom";
 import './styles.css'
 
 import { Button, Card, message, Modal } from 'antd';
-import { ExclamationCircleOutlined, EditOutlined } from '@ant-design/icons';
+import { ExclamationCircleOutlined, EditOutlined, RollbackOutlined, DeleteOutlined } from '@ant-design/icons';
 
 export default function DetalhesProduto(){
 
@@ -65,8 +65,9 @@ export default function DetalhesProduto(){
                     <p>Quantidade: {produto.quantity}</p>
                     <hr/>
                     <div className="produto_card--actions">
+                        <Button className="produto_card_button" type="default" icon={<RollbackOutlined/>} onClick={() => history.push(`/produtos`)}>Voltar</Button>
                         <Button className="produto_card_button" type="primary" success icon={<EditOutlined/>} onClick={() => history.push(`/editar/${produto.id}`, produto)}>Editar</Button>
-                        <Button className="produto_card_button" type="primary" danger onClick={() => showConfirm(produto)}>Excluir</Button>
+                        <Button className="produto_card_button" type="primary" danger icon={<DeleteOutlined/>} onClick={() => showConfirm(produto)}>Excluir</Button>
                     </div>
                 </Card>
             </div>
