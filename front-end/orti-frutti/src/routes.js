@@ -13,7 +13,7 @@ export default function Routes() {
     
     return(
         <TransitionGroup>
-            <CSSTransition key={location.key} timeout={300} classNames="transition">
+            <CSSTransition key={location.key} timeout={600} classNames="transition">
                 <Switch location={location}>
                     <Route path='/'exact component={Inicio}/>
                     <Route path='/produtos' component={Produtos}/>
