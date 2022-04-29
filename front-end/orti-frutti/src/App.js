@@ -2,11 +2,10 @@ import './App.css';
 import Routes from './routes'
 import './transition.css'
 
-import { Menu } from 'antd';
+import { Menu, Layout } from 'antd';
 import { PlusCircleOutlined, UnorderedListOutlined, HomeOutlined} from '@ant-design/icons';
 import { useHistory } from 'react-router-dom'
 
-import { Layout } from 'antd';
 const { Header, Footer, Sider, Content } = Layout;
 
 function App() {
