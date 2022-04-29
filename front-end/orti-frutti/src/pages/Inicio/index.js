@@ -3,6 +3,7 @@ import './styles.css'
 
 import Logo from '../Inicio/assets/logo.png'
 import { Button } from 'antd'
+import { EyeOutlined } from '@ant-design/icons'
 
 export default function Inicio(){
 
@@ -18,7 +19,7 @@ export default function Inicio(){
             <section>
                 <img src={Logo} alt='logo' className='logo'/>
                 <br/>
-                <Button className='botao' onClick={listarProdutos}>Ver Produtos</Button>
+                <Button className='botao' icon={<EyeOutlined/>} onClick={listarProdutos}>Ver Produtos</Button>
             </section>
         </div>
     )
